@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: rgb(201, 196, 196);
+    overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(128, 11, 11);
+    border-radius: 50px;
+}
+
+nav{
+    /* position: fixed; */
+    width: 100%;
+    height: 15vh;
+}
+
+#top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    /* margin-top: 100px; */
+    /* background-color: rgb(206, 148, 148); */
+    align-items: center;
+    padding:0 150px;
+}
+
+i{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+i#NOT{
+    font-size: 20px;
+}
+
+#top img#fab{
+    width: 10%;
+}
+
+#top img#ind{
+    width: 30px;
+}
+
+#down{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 150px;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+}
+
+.images{
+    width: 100%;
+    height: 100vh ;
+    background-image: url(cov1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 12s infinite;
+}
+
+@keyframes slide{
+    20%{
+    background-image: url(cov2.png);
+    background-size: cover;
+    }
+    40%{
+    background-image: url(cov3.png);
+    background-size: cover;
+    }
+    60%{
+        background-image: url(cov4.png);
+        background-size: cover;
+        }
+    80%{
+        background-image: url(cov5.png);
+        background-size: cover;
+        }
+    100%{
+    background-image: url(cov1.png);
+    background-size: cover;
+    }
+}
+
+#page2{
+    width: 100%;
+    min-height: 80vh;
+    /* background-color: rgb(226, 216, 216); */
+}
+
+#kid{
+    width: 100%;
+    height: 5vh;
+    /* background-color: rgb(236, 33, 33); */
+    color: #620613;
+    text-align: center;
+    letter-spacing: 5px;
+    font-style: italic;
+}
+
+#kidas{
+    width: 100%;
+    height: 5vh;
+    font-style: italic;
+    font-size: 20px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+#card1{
+    position: relative;
+}
+
+#cards{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 75vh;
+    background-color: rgb(228, 231, 228);
+}
+
+.crd{
+    margin-top: 18px;
+    width: 22%;
+    height: 50vh;
+}
+
+.crd img{
+    width: 100%;
+}
+
+#cards .crd p{
+    letter-spacing: 3px;
+    color: rgb(68, 67, 67);
+    font-size: 18px;
+}
+
+#page3{
+    width: 100%;
+    min-height: 60vh;
+    background-color: rgb(226, 216, 216);
+}
+
+#card3{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.pcrd{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 30%;
+    height: 60vh;
+    background-color: #333;
+}
+
+.pcrd img{
+    width: 100%;
+}
+
+#page3 h1{
+    letter-spacing: 8px;
+    margin-left: 23px;
+    color: rgb(151, 9, 9);
+}
+
+#page4{
+    width: 100%;
+    min-height: 85vh;
+    /* background-color: rgb(102, 84, 84); */
+}
+
+img{
+    width: 100%;
+}
+
+#page5{
+    width: 100%;
+    min-height: 85vh;
+    background-image: url(page5.png);
+    background-size: cover;
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove{
+    50%{
+    background-image: url(page5.2.png);
+    background-size: cover;
+    }
+}
+
+#page6{
+    width: 100%;
+    min-height: 85vh;
+    /* background-color: rgb(58, 123, 207); */
+}
+
+#page7{
+    width: 100%;
+    min-height: 112vh;
+    /* background-color: rgb(58, 123, 207); */
+    background-image: url(page7.jpeg);
+    background-size: cover;
+}
+
+#page7 #one{
+    width: 100%;
+    height: 30vh;
+    /* background-color: darkseagreen; */
+    text-align: center;
+    line-height: 55px;
+}
+
+#page7 #one h3{
+    font-size: 35px;
+    color: honeydew;
+}
+
+#page7 #one p{
+    font-size: 25px;
+    word-spacing: 2px;
+    color: rgb(228, 215, 158);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#page7 #one button{
+    width: 450px;
+    height: 60px;
+    font-size: 25px;
+    border-style: double;
+    color: honeydew;
+    background-color: rgba(198, 202, 198, 0.473);
+}
+
+#page7 #two{
+    width: 95%;
+    height: 60vh;
+    justify-content: center;
+    margin: 0 40px;
+    background-color: rgb(29, 104, 29);
+}
+
+@media (max-width: 450px) {
+    nav{
+        height: 10vh;
+    }
+    #top{
+        padding: 0px;
+    }
+    #we{
+        display: none;
+    }
+    .images{
+        width: 100%;
+        height: 100vh ;
+        background-image: url(cov1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: slide 12s infinite;
+    }
+    
+    @keyframes slide{
+        20%{
+        background-image: url(cov2.png);
+        background-size: cover;
+        }
+        40%{
+        background-image: url(cov3.png);
+        background-size: cover;
+        }
+        60%{
+            background-image: url(cov4.png);
+            background-size: cover;
+            }
+        80%{
+            background-image: url(cov5.png);
+            background-size: cover;
+            }
+        100%{
+        background-image: url(cov1.png);
+        background-size: cover;
+        }
+    }
+    #down{
+        display: none;
+    }
+}
